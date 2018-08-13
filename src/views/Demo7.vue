@@ -1,14 +1,8 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo7：计算属性：computed
-        </div>
-        <div class="example-content">
-            <p>Original message: "{{ message }}"</p>
-            <p>Computed reversed message: "{{ reversedMessage }}"</p>
-        </div>
+        <p>Original message: "{{ message }}"</p>
+        <p>Computed reversed message: "{{ reversedMessage }}"</p>
     </div>
-
 </template>
 
 <script>

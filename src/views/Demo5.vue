@@ -1,14 +1,8 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo5：双向绑定
-        </div>
-        <div class="example-content">
-            <p>{{ message }}</p>
-            <input v-model="message" title="">
-        </div>
+        <p>{{ message }}</p>
+        <input v-model="message" title="">
     </div>
-
 </template>
 
 <script>

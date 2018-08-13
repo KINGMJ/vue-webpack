@@ -1,22 +1,16 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo6：组件化构建
-        </div>
-        <div class="example-content">
-            <ol>
-                <TodoItem v-for="item in groceryList"
-                          v-bind:todo="item"
-                          v-bind:key="item.id"
-                />
-            </ol>
-        </div>
+        <ol>
+            <TodoItem v-for="item in groceryList"
+                      v-bind:todo="item"
+                      v-bind:key="item.id"
+            />
+        </ol>
     </div>
-
 </template>
 
 <script>
-    import TodoItem from '@/components/todo-item/TodoItem.vue';
+    import TodoItem from '@/components/TodoItem.vue';
 
     export default {
         name: 'demo6',

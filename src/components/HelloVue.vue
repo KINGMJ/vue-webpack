@@ -1,6 +1,17 @@
 <template>
     <div>
         <h1>{{ msg }}</h1>
+        <h3>官方资料</h3>
+        <ul>
+            <li><a href="https://cn.vuejs.org/" target="_blank">vue-js</a></li>
+            <li><a href="https://cli.vuejs.org/guide/" target="_blank">vue-cli</a></li>
+            <li><a href="https://router.vuejs.org/" target="_blank">vue-router</a></li>
+            <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+            <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+            <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+            <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+        </ul>
+
         <h3>第一组示例</h3>
         <ul>
             <li>
@@ -22,15 +33,12 @@
                 <router-link to="/demo6">组件化构建</router-link>
             </li>
         </ul>
+
         <h3>第二组示例</h3>
         <ul>
             <li>
                 <router-link to="/demo7">计算属性 computed</router-link>
             </li>
-            <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
-            <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
-            <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
-            <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
         </ul>
     </div>
 </template>

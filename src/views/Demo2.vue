@@ -1,11 +1,6 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo2：条件语句
-        </div>
-        <div class="example-content">
-            <p v-if="seen">现在你看到我了</p>
-        </div>
+        <p v-if="seen">现在你看到我了</p>
     </div>
 
 </template>

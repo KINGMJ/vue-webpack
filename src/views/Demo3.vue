@@ -1,15 +1,9 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo3：循环语句
-        </div>
-        <div class="example-content">
-            <ol>
-                <li v-for="todo in todos" :key="todo.id">{{todo.text}}</li>
-            </ol>
-        </div>
+        <ol>
+            <li v-for="todo in todos" :key="todo.id">{{todo.text}}</li>
+        </ol>
     </div>
-
 </template>
 
 <script>

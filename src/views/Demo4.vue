@@ -1,14 +1,8 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo4：事件绑定
-        </div>
-        <div class="example-content">
-            <p>{{ message }}</p>
-            <button v-on:click="reverseMessage">逆转消息</button>
-        </div>
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">逆转消息</button>
     </div>
-
 </template>
 
 <script>

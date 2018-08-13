@@ -1,15 +1,9 @@
 <template>
     <div class="container">
-        <div class="example-title">
-            Demo1：声明式渲染
-        </div>
-        <div class="example-content">
-        <span v-bind:title="message">
+       <span v-bind:title="message">
              {{message2}}
         </span>
-        </div>
     </div>
-
 </template>
 
 <script>

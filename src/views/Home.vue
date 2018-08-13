@@ -8,7 +8,7 @@
 
 <script>
     // @ is an alias to /src
-    import HelloVue from '@/components/hello-vue/HelloVue.vue';
+    import HelloVue from '@/components/HelloVue.vue';
 
     export default {
         name: 'home',
@@ -18,8 +18,10 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .container {
-        margin-top: 60px;
+        margin: 40px 0 0;
+        padding: 0 20px;
+        text-align: center;
     }
 </style>
