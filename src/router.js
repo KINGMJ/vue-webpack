@@ -57,6 +57,11 @@ export default new Router({
             name: 'demo7',
             component: () => import('./views/Demo7.vue'),
             meta: {title: 'Demo7：计算属性：computed'}
+        }, {
+            path: '/demo8',
+            name: 'demo8',
+            component: () => import('./views/Demo8.vue'),
+            meta: {title: 'Demo8：watch 监听 '}
         }
     ]
 })

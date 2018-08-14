@@ -39,6 +39,9 @@
             <li>
                 <router-link to="/demo7">计算属性 computed</router-link>
             </li>
+            <li>
+                <router-link to="/demo8">watch 监听</router-link>
+            </li>
         </ul>
     </div>
 </template>
