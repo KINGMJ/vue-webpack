@@ -43,6 +43,13 @@
                 <router-link to="/demo8">watch 监听</router-link>
             </li>
         </ul>
+
+        <h3>官方示例</h3>
+        <ul>
+            <li>
+                <router-link to="/demo9">Markdown 编辑器</router-link>
+            </li>
+        </ul>
     </div>
 </template>
 

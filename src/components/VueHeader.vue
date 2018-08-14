@@ -17,7 +17,7 @@
 
 <style lang="scss" scoped>
     #header {
-        height: 48px;
+        height: 5%;
         background: #333;
         color: #fff;
         font-size: 16px;

@@ -61,7 +61,12 @@ export default new Router({
             path: '/demo8',
             name: 'demo8',
             component: () => import('./views/Demo8.vue'),
-            meta: {title: 'Demo8：watch 监听 '}
+            meta: {title: 'Demo8：watch 监听'}
+        }, {
+            path: '/demo9',
+            name: 'demo9',
+            component: () => import('./views/Demo9.vue'),
+            meta: {title: 'Demo9：Markdown 编辑器'}
         }
     ]
 })

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <p>Original message: "{{ message }}"</p>
         <p>Computed reversed message: "{{ reversedMessage }}"</p>
     </div>

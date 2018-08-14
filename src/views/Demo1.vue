@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
        <span v-bind:title="message">
              {{message2}}
         </span>

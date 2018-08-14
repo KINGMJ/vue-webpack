@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <input v-model="question" title="">
         <p>{{answer}}</p>
     </div>

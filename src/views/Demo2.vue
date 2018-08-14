@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <p v-if="seen">现在你看到我了</p>
     </div>
 

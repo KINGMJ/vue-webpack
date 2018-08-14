@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">逆转消息</button>
     </div>

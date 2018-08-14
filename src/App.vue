@@ -2,7 +2,9 @@
 <template>
     <div id="app">
         <vue-header v-bind:title="title" v-if="show"/>
-        <router-view/>
+        <div class="container">
+            <router-view/>
+        </div>
     </div>
 </template>
 
@@ -34,22 +36,23 @@
 </script>
 
 <style>
-    body {
+    html, body, #app {
         margin: 0;
         padding: 0;
-    }
-
-    #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        height: 100%;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #2c3e50;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
     }
 
     .container {
-        margin: 20px 0 0;
-        padding: 0 20px;
         text-align: left;
+        height: 95%;
+    }
+
+    .container > div {
+        padding: 20px;
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <ol>
             <li v-for="todo in todos" :key="todo.id">{{todo.text}}</li>
         </ol>

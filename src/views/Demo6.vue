@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <ol>
             <TodoItem v-for="item in groceryList"
                       v-bind:todo="item"
