@@ -67,6 +67,16 @@ export default new Router({
             name: 'demo9',
             component: () => import('./views/Demo9.vue'),
             meta: {title: 'Demo9：Markdown 编辑器'}
+        }, {
+            path: '/demo10',
+            name: 'demo10',
+            component: () => import('./views/Demo10.vue'),
+            meta: {title: 'Demo10：GitHub 提交'}
+        }, {
+            path: '/demo11',
+            name: 'demo11',
+            component: () => import('./views/Demo11.vue'),
+            meta: {title: 'Demo11：网格组件'}
         }
     ]
 })

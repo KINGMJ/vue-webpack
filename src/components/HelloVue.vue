@@ -49,13 +49,19 @@
             <li>
                 <router-link to="/demo9">Markdown 编辑器</router-link>
             </li>
+            <li>
+                <router-link to="/demo10">GitHub 提交</router-link>
+            </li>
+            <li>
+                <router-link to="/demo11">网格组件</router-link>
+            </li>
         </ul>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'HelloWorld',
+        name: 'hello-vue',
         props: {
             msg: String
         }
