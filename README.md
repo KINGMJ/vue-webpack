@@ -27,5 +27,5 @@ npm run lint
 
 ## Screenshot
 
-
+![](https://raw.githubusercontent.com/KINGMJ/vue-webpack/master/screenshot/QQ%E6%88%AA%E5%9B%BE20180915220642.png)
 
