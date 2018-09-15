@@ -1,21 +1,23 @@
 # vue-webpack
-
-## Project setup
+> 使用 vue-cli 构建的 vue-demo，包含官方基础教程和示例
+ 
+## 安装
 ```
 npm install
+
 ```
 
-### Compiles and hot-reloads for development
+### 运行开发环境
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 运行生产环境
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 文件检查
 ```
 npm run lint
 ```
