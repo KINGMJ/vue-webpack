@@ -89,6 +89,18 @@ export default new Router({
             name: 'demo13',
             component: ()=>import('./views/Demo13.vue'),
             meta: {title: 'Demo13：Prop'}
+        },
+        {
+            path: '/demo14',
+            name: 'demo14',
+            component: ()=>import('./views/Demo14.vue'),
+            meta: {title: 'Demo14：子组件修改父组件的值'}
+        },
+        {
+            path: '/demo15',
+            name: 'demo15',
+            component: ()=>import('./views/Demo15.vue'),
+            meta: {title: 'Demo15：测试'}
         }
     ]
 })

@@ -55,6 +55,9 @@
 			<li>
 				<router-link to="/demo13">Prop</router-link>
 			</li>
+			<li>
+				<router-link to="/demo14">子组件修改父组件的值</router-link>
+			</li>
 		</ul>
 
 		<h3>官方示例</h3>
