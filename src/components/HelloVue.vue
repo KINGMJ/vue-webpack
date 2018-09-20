@@ -69,6 +69,15 @@
 			<li>
 				<router-link to="/demo16">基础 counter 例子</router-link>
 			</li>
+			<li>
+				<router-link to="/demo17">State mapState 的用法</router-link>
+			</li>
+			<li>
+				<router-link to="/demo18">Getter mapGetter 的用法</router-link>
+			</li>
+			<li>
+				<router-link to="/demo19">Mutation mapMutations 的用法</router-link>
+			</li>
 		</ul>
 
 		<h3>官方示例</h3>

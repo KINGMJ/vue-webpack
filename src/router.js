@@ -106,7 +106,25 @@ export default new Router({
             path: '/demo16',
             name: 'demo16',
             component: ()=>import('./views/Demo16.vue'),
-            meta: {title: 'Demo16：Vuex'}
+            meta: {title: 'Demo16：基础 counter 例子'}
+        },
+        {
+            path: '/demo17',
+            name: 'demo17',
+            component: ()=>import('./views/Demo17.vue'),
+            meta: {title: 'Demo17：State mapState 的用法'}
+        },
+        {
+            path: '/demo18',
+            name: 'demo18',
+            component: ()=>import('./views/Demo18.vue'),
+            meta: {title: 'Demo18：Getter mapGetter 的用法'}
+        },
+        {
+            path: '/demo19',
+            name: 'demo19',
+            component: ()=>import('./views/Demo19.vue'),
+            meta: {title: 'Demo19：Mutation mapMutations 的用法'}
         }
     ]
 })
