@@ -100,7 +100,13 @@ export default new Router({
             path: '/demo15',
             name: 'demo15',
             component: ()=>import('./views/Demo15.vue'),
-            meta: {title: 'Demo15：测试'}
+            meta: {title: 'Demo15：全局对象'}
+        },
+        {
+            path: '/demo16',
+            name: 'demo16',
+            component: ()=>import('./views/Demo16.vue'),
+            meta: {title: 'Demo16：Vuex'}
         }
     ]
 })

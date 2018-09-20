@@ -58,6 +58,17 @@
 			<li>
 				<router-link to="/demo14">子组件修改父组件的值</router-link>
 			</li>
+			<li>
+				<router-link to="/demo15">全局对象</router-link>
+			</li>
+
+		</ul>
+
+		<h3>Vuex</h3>
+		<ul>
+			<li>
+				<router-link to="/demo16">基础 counter 例子</router-link>
+			</li>
 		</ul>
 
 		<h3>官方示例</h3>
