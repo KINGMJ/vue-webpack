@@ -78,6 +78,9 @@
 			<li>
 				<router-link to="/demo19">Mutation mapMutations 的用法</router-link>
 			</li>
+			<li>
+				<router-link to="/demo20">Action 的用法</router-link>
+			</li>
 		</ul>
 
 		<h3>官方示例</h3>

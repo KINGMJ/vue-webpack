@@ -32,5 +32,15 @@ export default new Vuex.Store({
         decrement(state, payload) {
             state.count -= payload.amount;
         }
+    },
+    actions: {
+        increment({commit}, payload) {
+            setTimeout(()=> {
+                commit('increment', payload);
+            }, 1000);
+        },
+        decrement({commit}, payload) {
+            commit('decrement', payload);
+        }
     }
 })

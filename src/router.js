@@ -125,6 +125,12 @@ export default new Router({
             name: 'demo19',
             component: ()=>import('./views/Demo19.vue'),
             meta: {title: 'Demo19：Mutation mapMutations 的用法'}
+        },
+        {
+            path: '/demo20',
+            name: 'demo20',
+            component: ()=>import('./views/Demo20.vue'),
+            meta: {title: 'Demo20：Action  的用法'}
         }
     ]
 })
