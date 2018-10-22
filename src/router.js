@@ -131,6 +131,18 @@ export default new Router({
             name: 'demo20',
             component: ()=>import('./views/Demo20.vue'),
             meta: {title: 'Demo20：Action  的用法'}
+        },
+        {
+            path: '/demo21',
+            name: 'demo21',
+            component: ()=>import('./views/Demo21.vue'),
+            meta: {title: 'Demo21：异步组件'}
+        },
+        {
+            path: '/demo22',
+            name: 'demo22',
+            component: ()=>import('./views/Demo22.vue'),
+            meta: {title: 'Demo22：组件销毁'}
         }
     ]
 })

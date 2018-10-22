@@ -9,7 +9,8 @@ export default new Vuex.Store({
         color: 'red',
         fontSize: '18px',
         hello: 'hello',
-        books: ['语文', '数学', '英语']
+        books: ['语文', '数学', '英语'],
+        show: true
     },
     getters: {
         //字母转大写
@@ -31,6 +32,9 @@ export default new Vuex.Store({
         },
         decrement(state, payload) {
             state.count -= payload.amount;
+        },
+        setShow(state, payload) {
+            state.show = payload;
         }
     },
     actions: {
