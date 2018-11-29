@@ -1,19 +1,29 @@
 <template>
-    <div>
-        <p ref="testP">测试</p>
-        <button ref="testButton" @click="getDom">获取dom</button>
-    </div>
+	<div>
+		<p>{{upperHello}}</p>
+		<P>{{helloVue}}</P>
+		<p>{{findBook(1)}}</p>
+	</div>
 </template>
 
 <script>
+    import {mapState, mapGetters} from 'vuex'
+
     export default {
         name: "demo18",
-        methods: {
-            getDom() {
-                console.log(this.$refs.testP);
-                console.log(this.$el);
-            }
-        }
+        computed: {
+            ...mapState([
+                'count',
+                'color',
+                'fontSize'
+            ]),
+            ...mapGetters([
+                'upperHello',
+                'helloVue',
+                'findBook'
+            ])
+        },
+        methods: {}
     }
 </script>
 

@@ -1,26 +1,22 @@
 <template>
-    <div>
-        <ul>
-            <li v-for="num in renderTestArray(testArray)">{{num}}</li>
-        </ul>
-    </div>
+	<div>
+		<p :style="{color:color,fontSize:fontSize}">{{count}}</p>
+	</div>
 </template>
 
 <script>
+    import {mapState} from 'vuex'
+
     export default {
         name: "demo17",
-        data: () => {
-            return {
-                testArray: [1, 2, 3]
-            }
-        },
         computed: {
-            renderTestArray() {
-                return function (test_array) {
-                    return test_array.map(item => item * 2)
-                }
-            }
-        }
+            ...mapState([
+                'count',
+                'color',
+                'fontSize'
+            ])
+        },
+        methods: {}
     }
 </script>
 

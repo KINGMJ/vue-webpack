@@ -1,19 +1,27 @@
 <template>
-    <div>
-        <button @click="test1($event.currentTarget)">获取currentTarget</button>
-        <button @click="test2($event)">获取事件绑定this对象</button>
-    </div>
+	<div>
+		<p>{{count}}</p>
+		<button @click="increment">+</button>
+		<button @click="decrement">-</button>
+	</div>
 </template>
 
 <script>
+    import store from '@/store1';
+
     export default {
         name: "demo16",
+        computed: {
+            count() {
+                return store.state.count;
+            }
+        },
         methods: {
-            test1(target) {
-                console.log(target);
+            increment: function () {
+                store.commit('increment')
             },
-            test2(event) {
-                console.log(event);
+            decrement: function () {
+                store.commit('decrement')
             }
         }
     }
