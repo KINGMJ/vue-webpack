@@ -143,6 +143,72 @@ export default new Router({
             name: 'demo22',
             component: ()=>import('./views/Demo22.vue'),
             meta: {title: 'Demo22：组件销毁'}
+        },
+        {
+            path: '/demo23',
+            name: 'demo23',
+            component: ()=>import('./views/Demo23.vue'),
+            meta: {title: 'Demo23：Vue获取事件绑定对象'}
+        },
+        {
+            path: '/demo24',
+            name: 'demo24',
+            component: ()=>import('./views/Demo24.vue'),
+            meta: {title: 'Demo24：Vue的 computed 怎样传参'}
+        },
+        {
+            path: '/demo25',
+            name: 'demo25',
+            component: ()=>import('./views/Demo25.vue'),
+            meta: {title: 'Demo25：$refs和$el'}
+        },
+        {
+            path: '/demo26',
+            name: 'demo26',
+            component: ()=>import('./views/Demo26.vue'),
+            meta: {title: 'Demo26：样式操作'}
+        },
+        {
+            path: '/demo27',
+            name: 'demo27',
+            component: ()=>import('./views/Demo27.vue'),
+            meta: {title: 'Demo27：组件销毁错误示例'}
+        },
+        {
+            path: '/demo28',
+            name: 'demo28',
+            component: ()=>import('./views/Demo28.vue'),
+            meta: {title: 'Demo28：自定义指令'}
+        },
+        {
+            path: '/demo29',
+            name: 'demo29',
+            component: ()=>import('./views/Demo29.vue'),
+            meta: {title: 'Demo29：v-on的一些用法'}
+        },
+        {
+            path: '/demo30',
+            name: 'demo30',
+            component: ()=>import('./views/Demo30.vue'),
+            meta: {title: 'Demo30：watch的用法（1）'}
+        },
+        {
+            path: '/demo31',
+            name: 'demo31',
+            component: ()=>import('./views/Demo31.vue'),
+            meta: {title: 'Demo31：watch的用法（2）'}
+        },
+        {
+            path: '/demo32',
+            name: 'demo32',
+            component: ()=>import('./views/Demo32.vue'),
+            meta: {title: 'Demo32：watch的用法（3）'}
+        },
+        {
+            path: '/demo33',
+            name: 'demo33',
+            component: ()=>import('./views/Demo33.vue'),
+            meta: {title: 'Demo33：watch的用法（4）'}
         }
     ]
 })

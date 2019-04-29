@@ -1,13 +1,12 @@
 <template>
 	<div>
-		<p>This is child</p>
+		<input type="text" title="" v-focus>
 	</div>
-
 </template>
 
 <script>
     export default {
-        name: "child",
+        name: "demo28"
     }
 </script>
 

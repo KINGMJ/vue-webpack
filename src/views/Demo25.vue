@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <p ref="testP">测试</p>
-        <button ref="testButton" @click="getDom">获取dom</button>
-    </div>
+	<div>
+		<p ref="testP">测试</p>
+		<button ref="testButton" @click="getDom">获取dom</button>
+	</div>
 </template>
 
 <script>
@@ -16,7 +16,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>

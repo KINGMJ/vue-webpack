@@ -17,6 +17,7 @@
 		<ul>
 			<li><a href="https://github.com/imcvampire/vue-axios" target="_blank">vue-axios（异步请求库）</a></li>
 			<li><a href="https://lodash.com/" target="_blank">lodash（javascript实用工具库）</a></li>
+			<li><a href="http://element.eleme.io/#/zh-CN" target="_blank">Element（UI组件库）</a></li>
 		</ul>
 
 		<h3>第一组示例</h3>
@@ -97,11 +98,11 @@
 		</ul>
 
 		<h3>一些小Tips</h3>
-        <ul>
-            <li>
-                
-            </li>
-        </ul>
+		<ul>
+			<li>
+				<router-link to="/demo21">异步组件</router-link>
+			</li>
+		</ul>
 	</div>
 </template>
 

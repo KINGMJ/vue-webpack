@@ -23,9 +23,13 @@
             }
         },
         components: {
-            'child': function (resolve) {
-                require(['@/components/Child.vue'], resolve);
-            }
+            //第一种方式：
+            // 'child': function (resolve) {
+            //     require(['@/components/Child.vue'], resolve);
+            // }
+
+            //第二种方式：工厂函数中返回一个 Promise
+            'child': ()=>import('@/components/Child.vue')
         }
     }
 </script>

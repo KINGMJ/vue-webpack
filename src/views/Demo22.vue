@@ -1,12 +1,12 @@
 <template>
 	<div>
 		<button @click="destroyComponent">组件外部销毁</button>
-		<Child v-if="show"/>
+		<Child2 v-if="show"/>
 	</div>
 </template>
 
 <script>
-    import Child from '@/components/Child.vue';
+    import Child2 from '@/components/Child2.vue';
     import {mapState, mapMutations} from 'vuex';
 
     export default {
@@ -24,8 +24,9 @@
                 'setShow'
             ])
         },
+
         components: {
-            Child
+            Child2
         }
     }
 </script>
