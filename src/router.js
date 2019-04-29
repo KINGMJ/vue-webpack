@@ -209,6 +209,12 @@ export default new Router({
             name: 'demo33',
             component: ()=>import('./views/Demo33.vue'),
             meta: {title: 'Demo33：watch的用法（4）'}
+        },
+        {
+            path: '/demo34',
+            name: 'demo34',
+            component: ()=>import('./views/Demo34.vue'),
+            meta: {title: 'Demo34：组件复用（1）'}
         }
     ]
 })
