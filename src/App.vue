@@ -1,11 +1,11 @@
 <!--程序入口组件-->
 <template>
-    <div id="app">
-        <vue-header v-bind:title="title" v-if="show"/>
-        <div class="container">
-            <router-view/>
-        </div>
-    </div>
+	<div id="app">
+		<vue-header v-bind:title="title" v-if="show"/>
+		<div class="container">
+			<router-view/>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@
 
     export default {
         name: 'app',
-        data: () => {
+        data: ()=>{
             return {
                 title: '',
                 show: false
@@ -36,23 +36,24 @@
 </script>
 
 <style>
-    html, body, #app {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        color: #2c3e50;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-    }
+	html, body, #app {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+		color: #2c3e50;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+	}
 
-    .container {
-        text-align: left;
-        height: 95%;
-    }
+	.container {
+		text-align: left;
+		width: 100% !important;
+		height: 95%;
+	}
 
-    .container > div {
-        padding: 20px;
-    }
+	.container > div {
+		padding: 20px;
+	}
 </style>

@@ -4,18 +4,16 @@
 			{{title}}
 			<button type="button" class="close">×</button>
 		</div>
-		<div class="panel-sub-heading">
-			<input type="text" class="form-control"
-			       placeholder="查找..."
-			       v-focus>
+		<div class="panel-sub-heading" v-if="showSubHeading">
+			<slot name="sub-heading"></slot>
 		</div>
+
 		<div class="panel-body smart-scrollbar">
-			<ul>
-				<li :title="item.name" v-for="(item,index) in list" :id="item.id" @click="selectItem(index)">
-					{{item.name}}
-					<span v-show="selectedItems.includes(index)" class="check-icon glyphicon glyphicon-ok"></span>
-				</li>
-			</ul>
+			<slot></slot>
+		</div>
+
+		<div class="panel-footer" v-if="showFooter">
+			<slot name="footer"></slot>
 		</div>
 	</div>
 </template>
@@ -30,20 +28,16 @@
         },
         props: {
             title: String,
-            list: Array
-        },
-        methods: {
-            selectItem(key) {
-                const index = this.selectedItems.indexOf(key);
-                if (!~index) {
-                    this.selectedItems.push(key);
-                    this.$emit('selectItem', true);
-                } else {
-                    this.selectedItems.splice(index, 1);
-                    this.$emit('selectItem', false);
-                }
+            showSubHeading: {
+                type: Boolean,
+                default: false
+            },
+            showFooter: {
+                type: Boolean,
+                default: false
             }
-        }
+        },
+        methods: {}
     }
 </script>
 
