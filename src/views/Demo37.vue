@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<UserPanel/>
+		<br>
 		<TagPanel/>
 	</div>
 </template>

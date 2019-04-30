@@ -233,6 +233,24 @@ export default new Router({
             name: 'demo37',
             component: ()=>import('./views/Demo37.vue'),
             meta: {title: 'Demo37：组件复用（4）'}
+        },
+        {
+            path: '/demo38',
+            name: 'demo38',
+            component: ()=>import('./views/Demo38.vue'),
+            meta: {title: 'Demo38：组件复用（5）'}
+        },
+        {
+            path: '/demo39',
+            name: 'demo39',
+            component: ()=>import('./views/Demo39.vue'),
+            meta: {title: 'Demo39：组件复用（6）'}
+        },
+        {
+            path: '/demo40',
+            name: 'demo40',
+            component: ()=>import('./views/Demo40.vue'),
+            meta: {title: 'Demo40：组件复用（7）'}
         }
     ]
 })

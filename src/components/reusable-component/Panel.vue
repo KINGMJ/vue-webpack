@@ -2,7 +2,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			{{title}}
-			<button type="button" class="close">×</button>
+			<button type="button" class="close" @click="closePanel">×</button>
 		</div>
 		<div class="panel-sub-heading">
 			<input type="text" class="form-control"
@@ -42,6 +42,10 @@
                     this.selectedItems.splice(index, 1);
                     this.$emit('selectItem', false);
                 }
+            },
+
+            closePanel() {
+                this.$emit('closePanel');
             }
         }
     }
@@ -50,7 +54,7 @@
 <style scoped lang="scss">
 	.panel {
 		box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-		margin: 20px auto;
+		margin: 20px 0;
 		padding: 0;
 		width: 300px;
 		border: 1px solid #ebeef5;

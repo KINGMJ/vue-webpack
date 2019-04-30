@@ -1,5 +1,8 @@
 <template>
-	<Panel title="标签" :list="tag" @selectItem="selectTag"/>
+	<div>
+		<button @click="show=true">添加标签</button>
+		<Panel v-if="show" title="标签" :list="tag" @selectItem="selectTag" @closePanel="show=false"/>
+	</div>
 </template>
 
 <script>
@@ -9,6 +12,7 @@
         name: "tag-panel",
         data() {
             return {
+                show: false,
                 tag: [
                     {id: 1, name: 'bug'},
                     {id: 2, name: '需求'},
