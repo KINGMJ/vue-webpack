@@ -251,6 +251,18 @@ export default new Router({
             name: 'demo40',
             component: ()=>import('./views/Demo40.vue'),
             meta: {title: 'Demo40：组件复用（7）'}
+        },
+        {
+            path: '/demo41',
+            name: 'demo41',
+            component: ()=>import('./views/Demo41.vue'),
+            meta: {title: 'Demo41：插槽的高级用法（1）'}
+        },
+        {
+            path: '/demo42',
+            name: 'demo42',
+            component: ()=>import('./views/Demo42.vue'),
+            meta: {title: 'Demo42：key'}
         }
     ]
 })

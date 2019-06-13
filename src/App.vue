@@ -51,6 +51,7 @@
 		text-align: left;
 		width: 100% !important;
 		height: 95%;
+		margin: 20px auto;
 	}
 
 	.container > div {
