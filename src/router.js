@@ -263,6 +263,12 @@ export default new Router({
             name: 'demo42',
             component: ()=>import('./views/Demo42.vue'),
             meta: {title: 'Demo42：key'}
+        },
+        {
+            path: '/demo43',
+            name: 'demo43',
+            component: ()=>import('./views/Demo43.vue'),
+            meta: {title: 'Demo43：element-ui <el-carousel-item>组件的bug'}
         }
     ]
 })
