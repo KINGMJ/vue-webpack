@@ -269,6 +269,12 @@ export default new Router({
             name: 'demo43',
             component: ()=>import('./views/Demo43.vue'),
             meta: {title: 'Demo43：element-ui <el-carousel-item>组件的bug'}
+        },
+        {
+            path: '/demo44',
+            name: 'demo44',
+            component: ()=>import('./views/Demo44.vue'),
+            meta: {title: 'Demo44：element-ui的Popover怎么点空白处关闭'}
         }
     ]
 })
