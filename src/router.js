@@ -275,6 +275,12 @@ export default new Router({
             name: 'demo44',
             component: ()=>import('./views/Demo44.vue'),
             meta: {title: 'Demo44：element-ui的Popover怎么点空白处关闭'}
+        },
+         {
+            path: '/demo45',
+            name: 'demo45',
+            component: ()=>import('./views/Demo45.vue'),
+            meta: {title: 'Demo45：vue响应式原理'}
         }
     ]
 })
