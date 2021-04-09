@@ -299,5 +299,17 @@ export default new Router({
       component: () => import("./views/Demo47.vue"),
       meta: { title: "Demo47：v-for对数组的渲染" },
     },
+    {
+      path: "/demo48",
+      name: "demo48",
+      component: () => import("./views/Demo48.vue"),
+      meta: { title: "hoc组件" },
+    },
+    {
+      path: "/demo49",
+      name: "demo49",
+      component: () => import("./views/Demo49.vue"),
+      meta: { title: "hoc组件" },
+    },
   ],
 });
