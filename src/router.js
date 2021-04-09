@@ -293,5 +293,11 @@ export default new Router({
       component: () => import("./views/Demo46.vue"),
       meta: { title: "Demo46：vue事件修饰符" },
     },
+    {
+      path: "/demo47",
+      name: "demo47",
+      component: () => import("./views/Demo47.vue"),
+      meta: { title: "Demo47：v-for对数组的渲染" },
+    },
   ],
 });
