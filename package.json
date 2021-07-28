@@ -37,18 +37,11 @@
     },
     "rules": {
       "vue/html-self-closing": "off",
-      "vue/max-attributes-per-line": [
-        "warn",
-        {
-          "singleline": 4,
-          "multiline": {
-            "max": 1,
-            "allowFirstLine": false
-          }
-        }
-      ],
+      "vue/max-attributes-per-line": "off",
       "vue/require-v-for-key": "off",
-      "no-console": "off"
+      "no-console": "off",
+      "vue/require-prop-types": "off",
+      "vue/require-default-prop": "off"
     }
   },
   "postcss": {

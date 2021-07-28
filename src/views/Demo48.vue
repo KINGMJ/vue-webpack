@@ -1,42 +1,39 @@
 <template>
   <div>
-    <blog-post :id="1" @click="onClick" title="这是一个title" />
+    <blog-post :id="1" title="这是一个title" @click="onClick" />
     <!-- <comments-list /> -->
   </div>
 </template>
 
 <script>
 // import CommentsList from "../components/hoc/CommentsList.vue";
-import BlogPost from "../components/hoc/BlogPost.vue";
-import withSubscription from "../components/hoc/withSubscription";
+import BlogPost from '../components/hoc/BlogPost.vue'
+import withSubscription from '../components/hoc/withSubscription'
 
-const BlogPostWithSubscription = withSubscription(
-  BlogPost,
-  (DataSource, props) => {
-    return DataSource.getBlogPost(props.id);
-  }
-);
+const BlogPostWithSubscription = withSubscription(BlogPost, (DataSource, props) => {
+  return DataSource.getBlogPost(props.id)
+})
 // const CommentsListWithSubscription = withSubscription(
 //   CommentsList,
 //   (DataSource) => DataSource.getComments()
 // );
 export default {
-  name: "app",
+  name: 'App',
   components: {
-    "blog-post": BlogPostWithSubscription,
+    'blog-post': BlogPostWithSubscription
     // "comments-list": CommentsListWithSubscription,
   },
   methods: {
     onClick(msg) {
-      alert(msg);
-    },
-  },
-};
+      alert(msg)
+    }
+  }
+}
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

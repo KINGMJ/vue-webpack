@@ -1,26 +1,24 @@
 <template>
-	<div>
-		<UserName2 :name="name"/>
-	</div>
+  <div>
+    <UserName2 :name="name" />
+  </div>
 </template>
 
 <script>
-    import UserName2 from '@/components/UserName2.vue';
+import UserName2 from '@/components/UserName2.vue'
 
-    export default {
-        name: "demo31",
-        data: ()=> {
-            return {
-                name: 'Jack'
-            }
-        },
-        methods: {},
-        components: {
-            UserName2
-        }
+export default {
+  name: 'Demo31',
+  components: {
+    UserName2
+  },
+  data: () => {
+    return {
+      name: 'Jack'
     }
+  },
+  methods: {}
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

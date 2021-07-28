@@ -1,13 +1,19 @@
 <template>
-	<span>
-		<slot v-bind:user="user">
-			{{user.firstName}}
-		</slot>
-	</span>
+  <span>
+    <slot :user="user"></slot>
+  </span>
 </template>
 
 <script>
-    export default {
-        name: "current-user"
+export default {
+  name: 'CurrentUser',
+  data() {
+    return {
+      user: {
+        firstName: 'Jack',
+        lastName: 'Ma'
+      }
     }
+  }
+}
 </script>

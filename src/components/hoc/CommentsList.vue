@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "comments-list",
-  props: ["data"],
-};
+  name: 'CommentsList',
+  props: ['data']
+}
 </script>

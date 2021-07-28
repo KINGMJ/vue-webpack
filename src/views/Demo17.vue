@@ -1,25 +1,19 @@
 <template>
-	<div>
-		<p :style="{color:color,fontSize:fontSize}">{{count}}</p>
-	</div>
+  <div>
+    <p :style="{ color: color, fontSize: fontSize }">{{ count }}</p>
+  </div>
 </template>
 
 <script>
-    import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 
-    export default {
-        name: "demo17",
-        computed: {
-            ...mapState([
-                'count',
-                'color',
-                'fontSize'
-            ])
-        },
-        methods: {}
-    }
+export default {
+  name: 'Demo17',
+  computed: {
+    ...mapState(['count', 'color', 'fontSize'])
+  },
+  methods: {}
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

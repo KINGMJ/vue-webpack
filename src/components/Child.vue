@@ -1,16 +1,13 @@
 <template>
-	<div>
-		<p>This is child</p>
-	</div>
-
+  <div>
+    <p>This is child</p>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "child",
-    }
+export default {
+  name: 'Child'
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

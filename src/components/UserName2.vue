@@ -1,26 +1,26 @@
 <template>
-	<div>
-		<p>my name is {{userName}}</p>
-		<input type="text" title="" v-model="userName">
-	</div>
+  <div>
+    <p>my name is {{ userName }}</p>
+    <input v-model="userName" type="text" title="" />
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "user-name2",
-        props: {
-            name: {
-                type: String,
-                default: ''
-            },
-        },
-        data: ()=> {
-            return {
-                userName: ''
-            }
-        },
-        created: function () {
-            this.userName = this.name;
-        }
+export default {
+  name: 'UserName2',
+  props: {
+    name: {
+      type: String,
+      default: ''
     }
+  },
+  data: () => {
+    return {
+      userName: ''
+    }
+  },
+  created: function() {
+    this.userName = this.name
+  }
+}
 </script>

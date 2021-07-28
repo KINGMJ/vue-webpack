@@ -1,23 +1,21 @@
 <template>
-	<PropDemo :msg="msg"/>
+  <PropDemo :msg="msg" />
 </template>
 
 <script>
-    import PropDemo from '@/components/PropDemo.vue';
+import PropDemo from '@/components/PropDemo.vue'
 
-    export default {
-        name: "demo13",
-        data: ()=> {
-            return {
-                msg: '传递一个属性给子组件'
-            }
-        },
-        components: {
-            PropDemo
-        }
+export default {
+  name: 'Demo13',
+  components: {
+    PropDemo
+  },
+  data: () => {
+    return {
+      msg: '传递一个属性给子组件'
     }
+  }
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

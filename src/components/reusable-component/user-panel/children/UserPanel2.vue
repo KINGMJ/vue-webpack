@@ -1,19 +1,18 @@
 <script>
-    import UserPanel from '@/components/reusable-component/user-panel/UserPanel.vue';
+import UserPanel from '@/components/reusable-component/user-panel/UserPanel.vue'
 
-    export default {
-        name: "user-panel2",
-        extends: UserPanel,
-        data() {
-            return {
-                show: true,
-            }
-        },
-        methods: {
-            showSelectMsg() {
-                console.log('子类2勾选了成员')
-            }
-        },
-
+export default {
+  name: 'UserPanel2',
+  extends: UserPanel,
+  data() {
+    return {
+      show: true
     }
+  },
+  methods: {
+    showSelectMsg() {
+      console.log('子类2勾选了成员')
+    }
+  }
+}
 </script>

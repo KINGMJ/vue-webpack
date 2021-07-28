@@ -1,26 +1,26 @@
-import Vue from "vue";
+import Vue from 'vue'
 
-const withSubscription = (component) => {
-  const inheritedProps = component.props || [];
-  return Vue.component("withSubscription", {
+const withSubscription = component => {
+  const inheritedProps = component.props || []
+  return Vue.component('withSubscription', {
+    props: [...inheritedProps],
+    data() {
+      return {
+        fetchedData: 'HOC中的数据'
+      }
+    },
     render(h) {
       return h(component, {
         props: {
           ...this.$props,
-          data: this.fetchedData,
+          data: this.fetchedData
         },
         on: { ...this.$listeners },
         scopedSlots: this.$scopedSlots,
-        atrrs: this.$attrs,
-      });
-    },
-    props: [...inheritedProps],
-    data() {
-      return {
-        fetchedData: "HOC中的数据",
-      };
-    },
-  });
-};
+        attrs: this.$attrs
+      })
+    }
+  })
+}
 
-export default withSubscription;
+export default withSubscription

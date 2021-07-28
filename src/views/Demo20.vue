@@ -1,35 +1,29 @@
 <template>
-	<div>
-		<p>{{count}}</p>
-		<button @click="increment">+</button>
-		<button @click="decrement({amount:10})">-</button>
-	</div>
+  <div>
+    <p>{{ count }}</p>
+    <button @click="increment">+</button>
+    <button @click="decrement({ amount: 10 })">-</button>
+  </div>
 </template>
 
 <script>
-    import {mapState, mapActions} from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
-    export default {
-        name: "demo20",
-        computed: {
-            ...mapState([
-                'count'
-            ])
-        },
-        methods: {
-            increment: function () {
-                this.$store.dispatch({
-                    type: 'increment',
-                    amount: 10
-                })
-            },
-            ...mapActions([
-                'decrement'
-            ])
-        }
-    }
+export default {
+  name: 'Demo20',
+  computed: {
+    ...mapState(['count'])
+  },
+  methods: {
+    increment: function() {
+      this.$store.dispatch({
+        type: 'increment',
+        amount: 10
+      })
+    },
+    ...mapActions(['decrement'])
+  }
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

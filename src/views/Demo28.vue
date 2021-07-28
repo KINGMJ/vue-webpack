@@ -1,15 +1,13 @@
 <template>
-	<div>
-		<input type="text" title="" v-focus>
-	</div>
+  <div>
+    <input v-focus type="text" title="" />
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "demo28"
-    }
+export default {
+  name: 'Demo28'
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

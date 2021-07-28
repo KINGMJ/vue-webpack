@@ -1,37 +1,33 @@
 <template>
   <div>
-    <base-component
-      :id="1"
-      :content="content"
-      @click="onClick"
-      title="这是一个title"
-    >
+    <base-component :id="1" :content="content" title="这是一个title" @click="onClick">
       <h2 slot="slot1">Base Component slot</h2>
+
       <p>default slot</p>
     </base-component>
   </div>
 </template>
 
 <script>
-import BaseComponent from "../components/hoc2/BaseComponent.vue";
-import withSubscription from "../components/hoc2/withSubscription";
+import BaseComponent from '../components/hoc2/BaseComponent.vue'
+import withSubscription from '../components/hoc2/withSubscription'
 
-const BaseComponentWithSubscription = withSubscription(BaseComponent);
+const BaseComponentWithSubscription = withSubscription(BaseComponent)
 
 export default {
-  name: "app",
+  name: 'App',
+  components: {
+    'base-component': BaseComponentWithSubscription
+  },
   data() {
     return {
-      content: "content from base",
-    };
-  },
-  components: {
-    "base-component": BaseComponentWithSubscription,
+      content: 'content from base'
+    }
   },
   methods: {
     onClick(msg) {
-      alert(msg);
-    },
-  },
-};
+      alert(msg)
+    }
+  }
+}
 </script>
