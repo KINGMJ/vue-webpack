@@ -46,7 +46,9 @@
             "allowFirstLine": false
           }
         }
-      ]
+      ],
+      "vue/require-v-for-key": "off",
+      "no-console": "off"
     }
   },
   "postcss": {
