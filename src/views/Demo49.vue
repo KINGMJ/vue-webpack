@@ -31,3 +31,9 @@ export default {
   }
 }
 </script>
+
+<!--
+高阶组件的用法：
+
+
+-->

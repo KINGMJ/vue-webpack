@@ -7,7 +7,7 @@
 
       <template>
         <ul>
-          <li :title="item.name" v-for="(item, index) in user" :id="item.id">
+          <li v-for="(item, index) in user" :title="item.name" :id="item.id">
             <img :src="item.avatar" alt="" />
             {{ item.name }}
           </li>
@@ -18,8 +18,8 @@
     <Panel2 :show-footer="true" title="标签">
       <template>
         <ul>
-          <li :title="item.name" v-for="(item, index) in tag" :id="item.id">
-            <span class="tag-block" :style="{ backgroundColor: item.color }"></span>
+          <li v-for="(item, index) in tag" :title="item.name" :id="item.id">
+            <span :style="{ backgroundColor: item.color }" class="tag-block"></span>
             <span>{{ item.name }}</span>
           </li>
         </ul>
