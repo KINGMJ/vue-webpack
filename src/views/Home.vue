@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <img src="../assets/logo.png" />
-    <HelloVue msg="使用 vue-cli 和 vue-router 构建的 demo" />
+    <HelloVue msg="基于 vue2.x 构建的 demo" />
   </div>
 </template>
 

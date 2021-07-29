@@ -44,6 +44,7 @@ body,
   height: 100%;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #2c3e50;
+  background: #f1f3f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
