@@ -41,7 +41,8 @@
       "vue/require-v-for-key": "off",
       "no-console": "off",
       "vue/require-prop-types": "off",
-      "vue/require-default-prop": "off"
+      "vue/require-default-prop": "off",
+      "vue/no-unused-vars": "off"
     }
   },
   "postcss": {
