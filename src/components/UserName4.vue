@@ -21,7 +21,7 @@ export default {
   },
   watch: {
     name: {
-      handler: function(val, oldVal) {
+      handler: function(val) {
         this.userName = val
       },
       immediate: true,

@@ -30,10 +30,6 @@ const generateDemoRoutes = demos => {
 }
 
 routes = routes.concat(generateDemoRoutes(getAllDemos()))
-
-// eslint-disable-next-line no-console
-console.log(routes)
-
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,

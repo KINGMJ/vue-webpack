@@ -1,6 +1,7 @@
 <template>
   <div>
     <UserName2 :name="name" />
+    <p>父组件name的值： {{ name }}</p>
   </div>
 </template>
 
