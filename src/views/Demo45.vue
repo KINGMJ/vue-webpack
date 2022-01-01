@@ -35,15 +35,15 @@ export default {
   },
   methods: {
     triggerUpdateFailed() {
-      this.b.age = 12
-      //this.lists[0] = "d";
-      //this.lists[3] = "e";
+      //this.b.age = 12       //vue无法检测到属性的添加和删除
+      //this.lists[0] = "d";  //利用索引直接修改一个数据项
+      //this.lists[3] = "e";  //改变数组的长度
     },
 
     triggerUpdateSucceed() {
-      //this.b = { name: "Rose" };
-      this.$set(this.b, 'name', 'Rose')
-      //this.b = Object.assign({}, this.b, { age: 12, sex: "male" });
+      //this.b = { name: "Rose" }; //对象重新赋值
+      this.$set(this.b, 'name', 'Rose') //通过this.$set方法
+      //this.b = Object.assign({}, this.b, { age: 12, sex: "male" });   //通过Object.assign函数
       //this.$set(this.lists, 1, "e");
       //this.$set(this.lists, 3, "d");
     }
